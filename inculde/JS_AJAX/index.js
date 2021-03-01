@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
                     let info = await fetch('include/JS_AJAX/request.json');
                     let content = await info.json();
                     if (content[0].status === true) {
-                        document.location.href = 'main.html';
+                        document.location.href = 'index.html';
                     }
                     if ((content[0].status === false) && (content[0].type == '0')) {
                         $('.PasswordValidation').text(content[0].message);
